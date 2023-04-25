@@ -1,9 +1,26 @@
 import "./App.css";
+import {
+	About,
+	Contact,
+	Footer,
+	Home,
+	Navbar,
+	Illustrator,
+	Photoshop,
+	Skills,
+} from "./Components";
 
 function App() {
 	return (
 		<>
-			<div>Jelena Suvajac</div>
+			<Navbar />
+			<Home />
+			<About />
+			<Skills />
+			<Illustrator />
+			<Photoshop />
+			<Contact />
+			<Footer />
 		</>
 	);
 }

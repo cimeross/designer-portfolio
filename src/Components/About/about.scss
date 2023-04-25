@@ -1,0 +1,96 @@
+:root {
+	--primaryColor: #00eaff;
+	--primaryHover: hsl(185, 92%, 41%);
+	--secondaryColor: rgb(150, 162, 188);
+	--paragraphColor: rgb(127, 127, 175);
+	--BgColor: #031a30;
+	--formColor: rgb(2, 15, 29);
+	--projectCardColor: #072340;
+	--textColor: #dae4fb;
+	--headerHeight: 3rem;
+}
+
+.about {
+	.sectionTitle {
+		padding-bottom: 2rem;
+	}
+	.sectionContent {
+		.textSection {
+			h4 {
+				color: var(--secondaryColor);
+				font-size: 1.1rem;
+				max-width: 100%;
+				letter-spacing: 1px;
+				font-weight: 500;
+				margin: auto;
+			}
+			.aboutBtn {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-top: 2rem;
+				background: var(--primaryColor);
+				width: max-content;
+				padding: 10px 15px;
+				border-radius: 15px;
+				&:hover {
+					background: var(--secondaryColor);
+				}
+
+				a {
+					color: var(--projectCardColor);
+					font-size: 1.2rem;
+					font-weight: 600;
+					cursor: pointer;
+					gap: 0.5rem;
+				}
+
+				a:hover {
+					color: var(--textColor);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 769px) {
+	.about {
+		width: 80%;
+		margin: auto;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.about {
+		.sectionContent {
+			display: flex;
+			justify-content: center;
+			margin: auto;
+		}
+	}
+}
+
+@media screen and (min-width: 1240px) {
+	.about {
+		.sectionContent {
+			.textSection {
+				p {
+					font-size: 0.8rem;
+					padding: 0 0 1rem 0;
+					font-style: italic;
+					letter-spacing: 2px;
+				}
+				h4 {
+					font-size: 1.2rem;
+					line-height: 1.5rem;
+				}
+			}
+
+			.aboutImgDiv {
+				width: 300px;
+				height: 300px;
+				margin: 0 auto 3rem;
+			}
+		}
+	}
+}
