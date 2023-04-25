@@ -1,0 +1,125 @@
+.skills {
+	.skillsContainer {
+		.groupTitle {
+			color: var(--textColor);
+			padding-top: 1rem;
+			.title {
+				font-weight: 300;
+				letter-spacing: 2px;
+				font-size: 1.2rem;
+			}
+			.subtitle {
+				display: block;
+				padding: 0.3rem 0 1rem;
+				color: var(--secondaryColor);
+				font-weight: 600;
+			}
+		}
+
+		.generalSkills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			justify-content: center;
+			align-items: center;
+			gap: 1rem;
+			padding-top: 2rem;
+
+			.singleSkill {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+
+				.iconBox {
+					position: relative;
+					height: 70px;
+					width: 70px;
+					background: var(--projectCardColor);
+					border: 2px solid var(--secondaryColor);
+					border-radius: 3rem;
+					justify-content: center;
+					align-items: center;
+					overflow: hidden;
+					z-index: 500;
+
+					.icon {
+						font-size: 28px;
+					}
+				}
+
+				.iconBox::before {
+					content: "";
+					height: 0;
+					width: 100%;
+					background: var(--primaryHover);
+					position: absolute;
+					top: 0;
+					left: 0;
+					z-index: 1;
+					transition: 0.2s;
+				}
+				.iconBox::after {
+					content: "";
+					height: 0;
+					width: 100%;
+					background: var(--BgColor);
+					position: absolute;
+					top: 0;
+					left: 0;
+					z-index: 1;
+					transition: 0.5s;
+				}
+				.iconBox:hover {
+					color: var(--textColor);
+					border: 2px solid var(--primaryColor);
+					.icon {
+						color: var(--primaryColor);
+					}
+				}
+
+				.skillName {
+					padding-top: 1rem;
+					text-align: center;
+					font-weight: 600;
+					color: var(--secondaryColor);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 480px) {
+	.skills {
+		.skillsContainer {
+			.skillGroup {
+				.generalSkills {
+					grid-template-columns: repeat(5, 1fr);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 769px) {
+	skills {
+		.skillsContainer {
+			.skillGroup {
+				.generalSkills {
+					grid-template-columns: repeat(3, 1fr);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1240px) {
+	skills {
+		.skillsContainer {
+			.skillGroup {
+				.generalSkills {
+					grid-template-columns: repeat(6, 1fr);
+				}
+			}
+		}
+	}
+}

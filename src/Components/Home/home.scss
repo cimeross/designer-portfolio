@@ -1,0 +1,210 @@
+.home {
+	background: url("../../assets/Portfolio.jpg") no-repeat center/cover;
+
+	.homeContainer {
+		padding: 4rem 1.5rem;
+		.introText {
+			font-size: 1.3rem;
+			color: var(--primaryColor);
+			font-weight: 600;
+			letter-spacing: 1px;
+		}
+		.title {
+			font-size: 3.3rem;
+			color: #fff;
+			padding: 0 0 0.7rem 0;
+		}
+		.subTitle {
+			display: block;
+			font-size: 1.8rem;
+			font-weight: 600;
+			color: var(--secondaryColor);
+			line-height: 2rem;
+			padding: 0.5rem 0;
+
+			.frontendDeveloper {
+				color: var(--primaryColor);
+			}
+		}
+
+		.homeParagraph {
+			padding: 0.6rem 1rem;
+			font-size: 1.3rem;
+			color: var(--paragraphColor);
+			padding: 1rem 0;
+			max-width: 600px;
+		}
+	}
+
+	.leftIcons,
+	.rightEmail {
+		display: none;
+	}
+
+	.lowerHomeSection {
+		.contactBtn {
+			padding: 0.6rem 1rem;
+			background: var(--primaryColor);
+			color: var(--BgColor);
+			border: none;
+			outline: none;
+			&:hover {
+				background: var(--primaryHover);
+			}
+			a {
+				font-size: 18px;
+				font-weight: 600;
+				gap: 0.5rem;
+				align-items: center;
+				color: var(--BgColor);
+			}
+		}
+
+		.scrollDiv {
+			padding-top: 1rem;
+			display: flex;
+			align-items: center;
+			.scroll {
+				font-size: 1.3rem;
+				color: var(--primaryColor);
+			}
+
+			.icon {
+				font-size: 1.3rem;
+				margin-left: 0.6rem;
+				padding-top: 0.2rem;
+				color: var(--primaryColor);
+				animation: move 0.5s infinite;
+			}
+
+			@keyframes move {
+				0% {
+					transform: translateY(5px);
+				}
+				25% {
+					transform: translateY(0px);
+				}
+				50% {
+					transform: translateY(5px);
+				}
+				100% {
+					transform: translateY(0px);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 480px) {
+	.home {
+		.homeContainer {
+			padding: 5rem 1.5rem;
+			.introText {
+				font-size: 1.5rem;
+			}
+			.title {
+				font-size: 3.8rem;
+			}
+
+			.subTitle {
+				font-size: 2.1rem;
+			}
+			.homeParagraph {
+				font-size: 1.5rem;
+			}
+
+			.lowerHomeSection {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-end;
+				.contactBtn {
+					border-radius: 15px;
+					padding: 0.8rem 1.5rem;
+					a {
+						font-size: 22px;
+					}
+					&:hover {
+						background: var(--BgColor);
+						a {
+							color: var(--primaryColor);
+						}
+					}
+				}
+			}
+
+			.scrollDiv {
+				padding-top: 2rem;
+
+				.icon {
+					font-size: 1.5rem;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 770px) {
+	.home {
+		.homeContainer {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			width: 80%;
+			margin: auto;
+			padding: 5rem 1.5rem;
+		}
+	}
+}
+
+@media screen and (min-width: 1240px) {
+	.home {
+		.homeContainer {
+			padding: 6rem 0 6rem 0;
+			.introText {
+				font-size: 1.8rem;
+			}
+
+			.title {
+				font-size: 5.5rem;
+			}
+
+			.subTitle {
+				line-height: 2.5rem;
+				font-size: 2.6rem;
+			}
+
+			.homeParagraph {
+				font-size: 1rem;
+				letter-spacing: 1px;
+				color: #fff;
+				font-style: italic;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1540px) {
+	.home {
+		padding: 20rem 0 4rem;
+
+		.homeContainer {
+			padding: 0 0 12rem 6rem;
+			.introText {
+				font-size: 2rem;
+			}
+
+			.title {
+				font-size: 6.5rem;
+			}
+
+			.subTitle {
+				line-height: 2.5rem;
+				font-size: 2.8rem;
+			}
+
+			.lowerHomeSection {
+				padding-top: 2rem;
+			}
+		}
+	}
+}
