@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useRef } from "react";
 import "./contact.scss";
 import { AiFillLinkedin } from "react-icons/ai";
@@ -21,7 +22,6 @@ const Contact = () => {
 	return (
 		<section id="contact" className="contact section container">
 			<div className="sectionTitle">
-				<span className="titleNumber">04.</span>
 				<h5 className="titleText">
 					Contact
 					<div className="underline">
@@ -37,12 +37,13 @@ const Contact = () => {
 							<div>
 								<AiFillLinkedin className="icon" />
 							</div>
-							<h4>Linkedin</h4>
+							<h4>LinkedIn</h4>
 							<div>
 								<a
-									href="https://www.linkedin.com/in/milan-suvajac-ms"
+									href="https://www.linkedin.com/in/jelena-suvajac-design/"
 									target="_blank"
 									className="flex"
+									rel="noreferrer"
 								>
 									Send message
 									<TbArrowBigRightLines className="icon" />

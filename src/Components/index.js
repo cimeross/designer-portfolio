@@ -6,3 +6,4 @@ export { default as Navbar } from "./Navbar/Navbar";
 export { default as Illustrator } from "./Projects/Illustrator";
 export { default as Photoshop } from "./Projects/Photoshop";
 export { default as Skills } from "./Skills/Skills";
+export { default as Projects } from "./Projects/Projects";

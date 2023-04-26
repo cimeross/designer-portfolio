@@ -127,6 +127,9 @@ img {
 	align-content: center;
 }
 
+.section_subtitle {
+	font-size: 1.3rem;
+}
 .titleNumber {
 	color: var(--primaryColor);
 	margin: 0 0.6rem;
@@ -136,6 +139,7 @@ img {
 .titleText {
 	position: relative;
 	width: max-content;
+	padding-bottom: 1rem;
 }
 
 .underline {
@@ -187,23 +191,23 @@ body {
 
 @media screen and (min-width: 769px) {
 	.container {
-		width: 70%;
+		width: 90%;
 		margin: auto;
 	}
 }
 
 @media screen and (min-width: 960px) {
 	.section {
-		padding: 6rem 0 4rem;
+		padding: 4rem 0 4rem;
 	}
 }
 
 @media screen and (min-width: 1240px) {
 	.section {
-		padding: 6rem 0 4rem;
+		padding: 4rem 0 4rem;
 	}
 	.container {
-		width: 80%;
+		width: 90%;
 		margin: auto;
 	}
 }
