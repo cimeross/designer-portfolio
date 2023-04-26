@@ -5,9 +5,8 @@ import {
 	Footer,
 	Home,
 	Navbar,
-	Illustrator,
-	Photoshop,
 	Skills,
+	Projects,
 } from "./Components";
 
 function App() {
@@ -17,8 +16,7 @@ function App() {
 			<Home />
 			<About />
 			<Skills />
-			<Illustrator />
-			<Photoshop />
+			<Projects />
 			<Contact />
 			<Footer />
 		</>

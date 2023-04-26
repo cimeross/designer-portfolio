@@ -2,6 +2,7 @@
 import React from "react";
 import "./about.scss";
 import { GrDocumentDownload } from "react-icons/gr";
+import img from "../../assets/Portfolio_mobileImg_new.png";
 
 import pdfFile from "../../assets/MilanSuvajac_cv.pdf";
 
@@ -40,6 +41,9 @@ const About = () => {
 						the field, my focus has shifted towards the dynamic and exciting
 						realm of UX/UI design.
 					</h4>
+					<div className="aboutImgDiv">
+						<img src={img} alt="Jelena Suvajac" className="aboutImg" />
+					</div>
 					<div className="aboutBtn">
 						<a onClick={handleDownload} href="#" className="flex">
 							Download CV <GrDocumentDownload className="icon" />
