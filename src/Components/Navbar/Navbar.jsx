@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import "./navbar.scss";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { TbGridDots } from "react-icons/tb";
+import Logo from "../../assets/Logo.png";
+import pdfFile from "../../assets/MilanSuvajac_cv.pdf";
 
 const Navbar = () => {
 	const [active, setActive] = useState("navBar");
@@ -30,11 +32,20 @@ const Navbar = () => {
 		};
 	}, []);
 
+	const handleDownload = () => {
+		const link = document.createElement("a");
+		link.href = pdfFile;
+		link.download = "MilanSuvajac_cv.pdf";
+		link.click();
+	};
+
 	return (
 		<header className={activeHeader}>
 			<div className="logoDiv">
 				<h1 className="logo">
-					<a href="#home">JS</a>
+					<a href="#home">
+						<img src={Logo} alt="Logo" />
+					</a>
 				</h1>
 			</div>
 			<div className={active}>
@@ -60,7 +71,9 @@ const Navbar = () => {
 						</a>
 					</li>
 					<button className="btn">
-						<a href="">Resume</a>
+						<a onClick={handleDownload} href="#">
+							Resume
+						</a>
 					</button>
 				</ul>
 				<div onClick={removeNavBar} className="closeNavBar">
