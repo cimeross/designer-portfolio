@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 import "./navbar.scss";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { TbGridDots } from "react-icons/tb";
-import Logo from "../../assets/Logo.png";
-import pdfFile from "../../assets/MilanSuvajac_cv.pdf";
+import Logo from "../../assets/Logo_Original_White.png";
+import pdfFile from "../../assets/Jelena Suvajac.pdf";
 
 const Navbar = () => {
 	const [active, setActive] = useState("navBar");
@@ -35,7 +35,7 @@ const Navbar = () => {
 	const handleDownload = () => {
 		const link = document.createElement("a");
 		link.href = pdfFile;
-		link.download = "MilanSuvajac_cv.pdf";
+		link.download = "Jelena Suvajac.pdf";
 		link.click();
 	};
 
