@@ -2,7 +2,7 @@
 import React from "react";
 import "./about.scss";
 import { GrDocumentDownload } from "react-icons/gr";
-import img from "../../assets/Portfolio_mobileImg_new.png";
+import img from "../../assets/IMG_20230922_161032.jpg";
 
 import pdfFile from "../../assets/Jelena Suvajac.pdf";
 
