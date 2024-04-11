@@ -2,14 +2,15 @@
 import React from "react";
 import "./about.scss";
 import { GrDocumentDownload } from "react-icons/gr";
+import img from "../../assets/IMG_20230922_161032.jpg";
 
-import pdfFile from "../../assets/MilanSuvajac_cv.pdf";
+import pdfFile from "../../assets/Jelena Suvajac.pdf";
 
 const About = () => {
 	const handleDownload = () => {
 		const link = document.createElement("a");
 		link.href = pdfFile;
-		link.download = "MilanSuvajac_cv.pdf";
+		link.download = "Jelena Suvajac.pdf";
 		link.click();
 	};
 
@@ -40,6 +41,9 @@ const About = () => {
 						the field, my focus has shifted towards the dynamic and exciting
 						realm of UX/UI design.
 					</h4>
+					<div className="aboutImgDiv">
+						<img src={img} alt="Jelena Suvajac" className="aboutImg" />
+					</div>
 					<div className="aboutBtn">
 						<a onClick={handleDownload} href="#" className="flex">
 							Download CV <GrDocumentDownload className="icon" />

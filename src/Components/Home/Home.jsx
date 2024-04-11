@@ -8,11 +8,11 @@ import "./home.scss";
 const Home = () => {
 	return (
 		<section id="home" className="home section">
-			<div className="container homeContainer">
+			<div className="homeContainer">
 				<span className="introText">Hi, my name is</span>
 				<h1 className="title">Jelena Suvajac</h1>
 				<span className="subTitle">
-					<span className="frontendDeveloper">Graphic Designer</span>.
+					<span className="frontendDeveloper">Graphic Designer</span>
 				</span>
 				<p className="homeParagraph">
 					Every great design begins with an even better story.

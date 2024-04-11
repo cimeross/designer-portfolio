@@ -1,26 +1,26 @@
 .home {
-	background: url("../../assets/Portfolio.jpg") no-repeat center/cover;
+	background: url("../../assets/Portfolio_mobile.png") no-repeat center/cover;
 
 	.homeContainer {
-		padding: 4rem 1.5rem;
+		padding: 5rem 1.5rem;
 		.introText {
-			font-size: 1.3rem;
+			font-size: 1.1rem;
 			color: var(--primaryColor);
 			font-weight: 600;
 			letter-spacing: 1px;
+			filter: drop-shadow(0px 7px 6px var(--BgColor));
 		}
 		.title {
-			font-size: 3.3rem;
+			font-size: 4.2rem;
 			color: #fff;
-			padding: 0 0 0.7rem 0;
+			padding: 0.7rem 0;
 		}
 		.subTitle {
 			display: block;
-			font-size: 1.8rem;
+			font-size: 1.5rem;
 			font-weight: 600;
 			color: var(--secondaryColor);
 			line-height: 2rem;
-			padding: 0.5rem 0;
 
 			.frontendDeveloper {
 				color: var(--primaryColor);
@@ -29,10 +29,12 @@
 
 		.homeParagraph {
 			padding: 0.6rem 1rem;
-			font-size: 1.3rem;
-			color: var(--paragraphColor);
+			font-size: 0.9rem;
+			letter-spacing: 1px;
+			font-style: italic;
+			color: #fff;
 			padding: 1rem 0;
-			max-width: 600px;
+			filter: drop-shadow(0px 7px 6px var(--BgColor));
 		}
 	}
 
@@ -42,30 +44,36 @@
 	}
 
 	.lowerHomeSection {
+		padding-top: 2.5rem;
 		.contactBtn {
 			padding: 0.6rem 1rem;
 			background: var(--primaryColor);
-			color: var(--BgColor);
 			border: none;
+			border-radius: 15px;
 			outline: none;
 			&:hover {
-				background: var(--primaryHover);
+				background: var(--BgColor);
+				color: var(--primaryColor);
 			}
 			a {
-				font-size: 18px;
+				font-size: 16px;
 				font-weight: 600;
 				gap: 0.5rem;
 				align-items: center;
 				color: var(--BgColor);
+				&:hover {
+					color: var(--primaryColor);
+				}
 			}
 		}
 
 		.scrollDiv {
-			padding-top: 1rem;
+			padding-top: 3rem;
 			display: flex;
+			justify-content: center;
 			align-items: center;
 			.scroll {
-				font-size: 1.3rem;
+				font-size: 1.2rem;
 				color: var(--primaryColor);
 			}
 
@@ -99,44 +107,12 @@
 	.home {
 		.homeContainer {
 			padding: 5rem 1.5rem;
-			.introText {
-				font-size: 1.5rem;
-			}
-			.title {
-				font-size: 3.8rem;
-			}
-
-			.subTitle {
-				font-size: 2.1rem;
-			}
-			.homeParagraph {
-				font-size: 1.5rem;
-			}
-
-			.lowerHomeSection {
-				display: flex;
-				flex-direction: column;
-				align-items: flex-end;
-				.contactBtn {
-					border-radius: 15px;
-					padding: 0.8rem 1.5rem;
-					a {
-						font-size: 22px;
-					}
-					&:hover {
-						background: var(--BgColor);
-						a {
-							color: var(--primaryColor);
-						}
-					}
-				}
-			}
 
 			.scrollDiv {
-				padding-top: 2rem;
+				padding-top: 4rem;
 
 				.icon {
-					font-size: 1.5rem;
+					font-size: 1.3rem;
 				}
 			}
 		}
@@ -145,21 +121,27 @@
 
 @media screen and (min-width: 770px) {
 	.home {
+		background: url("../../assets/AirBrush_20230919143526.jpg") no-repeat
+			center/cover;
+
 		.homeContainer {
 			display: flex;
 			flex-direction: column;
 			align-items: flex-end;
 			width: 80%;
 			margin: auto;
-			padding: 5rem 1.5rem;
+			padding: 5rem 0;
+			.scrollDiv {
+				padding-top: 2rem;
+			}
 		}
 	}
 }
 
-@media screen and (min-width: 1240px) {
+@media screen and (min-width: 1040px) {
 	.home {
 		.homeContainer {
-			padding: 6rem 0 6rem 0;
+			padding: 8rem 0 6rem 0;
 			.introText {
 				font-size: 1.8rem;
 			}
@@ -183,9 +165,9 @@
 	}
 }
 
-@media screen and (min-width: 1540px) {
+@media screen and (min-width: 1390px) {
 	.home {
-		padding: 20rem 0 4rem;
+		padding: 16rem 0 4rem;
 
 		.homeContainer {
 			padding: 0 0 12rem 6rem;

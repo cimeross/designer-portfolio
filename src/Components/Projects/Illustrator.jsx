@@ -1,5 +1,4 @@
-import "./illustrator.scss";
-//import { DiIllustrator } from "react-icons/di";
+import "./projects.scss";
 
 import img from "../../assets/Illustrator projects/Legends.jpg";
 import img1 from "../../assets/Illustrator projects/Legends Blue.png";
@@ -16,6 +15,7 @@ import { useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import ZoomInIcon from "@mui/icons-material/ZoomIn";
 import ZoomOutIcon from "@mui/icons-material/ZoomOut";
+import { SiAdobeillustrator } from "react-icons/si";
 
 const data = [
 	{
@@ -64,7 +64,7 @@ const data = [
 	},
 ];
 
-const Projects = () => {
+const Illustrator = () => {
 	const [modal, setModal] = useState(false);
 	const [tempImgSrc, setTempImgSrc] = useState("");
 	const [zoomLevel, setZoomLevel] = useState(1);
@@ -136,7 +136,10 @@ const Projects = () => {
 					</div>
 				</h5>
 			</div>
-			<div className="section_subtitle">Adobe Illustrator</div>
+			<div className="flex">
+				<SiAdobeillustrator className="icon illustrator" />
+				<div className="section_subtitle">Adobe Illustrator</div>
+			</div>
 			<div className={modal ? "modal open" : "modal"}>
 				<img
 					src={tempImgSrc}
@@ -163,4 +166,4 @@ const Projects = () => {
 	);
 };
 
-export default Projects;
+export default Illustrator;

@@ -2,17 +2,18 @@ import { useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import ZoomInIcon from "@mui/icons-material/ZoomIn";
 import ZoomOutIcon from "@mui/icons-material/ZoomOut";
-import img from "../../assets/Photoshop projects/grad_peska_start.jpg";
-import img7 from "../../assets/Photoshop projects/hunter_girl..jpg";
-import img2 from "../../assets/Photoshop projects/Iphone.jpg";
-import img3 from "../../assets/Photoshop projects/jazz_night.jpg";
-import img10 from "../../assets/Photoshop projects/Kapsule.jpg";
-import img6 from "../../assets/Photoshop projects/Party.jpg";
-import img5 from "../../assets/Photoshop projects/Patikuca.jpg";
-import img1 from "../../assets/Photoshop projects/pecurka.jpg";
-import img8 from "../../assets/Photoshop projects/slonovi.jpg";
-import img9 from "../../assets/Photoshop projects/stop_the_virus.jpg";
-import img4 from "../../assets/Photoshop projects/Susret1.jpg";
+import { SiAdobephotoshop } from "react-icons/si";
+import img from "../../assets/Photoshop projects/grad_peska_start.png";
+import img7 from "../../assets/Photoshop projects/hunter_girl..png";
+import img2 from "../../assets/Photoshop projects/Iphone.png";
+import img3 from "../../assets/Photoshop projects/jazz_night.png";
+import img10 from "../../assets/Photoshop projects/Kapsule.png";
+import img6 from "../../assets/Photoshop projects/Party.png";
+import img5 from "../../assets/Photoshop projects/Patikuca.png";
+import img1 from "../../assets/Photoshop projects/pecurka.png";
+import img8 from "../../assets/Photoshop projects/slonovi.png";
+import img9 from "../../assets/Photoshop projects/stop_the_virus.png";
+import img4 from "../../assets/Photoshop projects/Susret1.png";
 
 const data = [
 	{
@@ -61,7 +62,7 @@ const data = [
 	},
 ];
 
-const Projects = () => {
+const Photoshop = () => {
 	const [modal, setModal] = useState(false);
 	const [tempImgSrc, setTempImgSrc] = useState("");
 	const [zoomLevel, setZoomLevel] = useState(1);
@@ -125,15 +126,10 @@ const Projects = () => {
 
 	return (
 		<section id="projects" className="projects container section">
-			<div className="sectionTitle">
-				<h5 className="titleText">
-					Projects
-					<div className="underline">
-						<span></span>
-					</div>
-				</h5>
+			<div className="flex">
+				<SiAdobephotoshop className="icon illustrator" />
+				<div className="section_subtitle">Adobe Photoshop</div>
 			</div>
-			<div className="section_subtitle">Adobe Photoshop</div>
 			<div className={modal ? "modal open" : "modal"}>
 				<img
 					src={tempImgSrc}
@@ -160,4 +156,4 @@ const Projects = () => {
 	);
 };
 
-export default Projects;
+export default Photoshop;

@@ -21,7 +21,7 @@ const Skills = () => {
 			<div className="skillsContainer grid">
 				<div className="skillGroup">
 					<div className="groupTitle">
-						<h2 className="title">Graphic & UI / UX design</h2>
+						<h2 className="title">Graphic & UX / UI design</h2>
 						<span className="subtitle"></span>
 					</div>
 					<div className="generalSkills">
